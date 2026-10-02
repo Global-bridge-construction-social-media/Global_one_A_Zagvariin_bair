@@ -190,11 +190,36 @@ function switchScene(scene) {
   updateSceneName(scene);
   updateSceneList(scene);
 
-  var livingRoomPlanOverlay = document.querySelector('#living-room-plan-overlay');
+  var livingRoomPlanOverlay =
+    document.querySelector('#living-room-plan-overlay');
+
+  var bedroom1PlanOverlay =
+    document.querySelector('#bedroom-1-plan-overlay');
+
+  var bedroom2PlanOverlay =
+    document.querySelector('#bedroom-2-plan-overlay');
+
+  var bathroomPlanOverlay =
+    document.querySelector('#bathroom-plan-overlay');
 
   if (livingRoomPlanOverlay) {
     livingRoomPlanOverlay.style.display =
       scene.data.id === '0--' ? 'block' : 'none';
+  }
+
+  if (bedroom1PlanOverlay) {
+    bedroom1PlanOverlay.style.display =
+      scene.data.id === '1---1' ? 'block' : 'none';
+  }
+
+  if (bedroom2PlanOverlay) {
+    bedroom2PlanOverlay.style.display =
+      scene.data.id === '2---2' ? 'block' : 'none';
+  }
+
+  if (bathroomPlanOverlay) {
+    bathroomPlanOverlay.style.display =
+      scene.data.id === '3---' ? 'block' : 'none';
   }
 }
 
