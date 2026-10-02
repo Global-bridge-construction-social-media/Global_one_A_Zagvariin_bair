@@ -828,3 +828,18 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+#logo-overlay {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 500px;
+  max-width: 45vw;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+#logo-overlay img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
