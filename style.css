@@ -846,7 +846,7 @@ body.view-control-buttons .viewControlButton {
 #living-room-plan-overlay {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 40px;
   width: 360px;
   max-width: 28vw;
   z-index: 1000;
@@ -859,7 +859,7 @@ body.view-control-buttons .viewControlButton {
 #bathroom-plan-overlay {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 40px;
   width: 360px;
   max-width: 28vw;
   z-index: 1000;
