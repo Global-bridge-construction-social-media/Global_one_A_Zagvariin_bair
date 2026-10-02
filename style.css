@@ -830,10 +830,10 @@ body.view-control-buttons .viewControlButton {
 }
 #logo-overlay {
   position: fixed;
-  left: 20px;
-  bottom: 20px;
+  left: 50px;
+  bottom: 50px;
   width: 1000px;
-  max-width: 45vw;
+  max-width: 4500vw;
   z-index: 1000;
   pointer-events: none;
 }
