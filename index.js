@@ -182,14 +182,21 @@
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
 
-  function switchScene(scene) {
-    stopAutorotate();
-    scene.view.setParameters(scene.data.initialViewParameters);
-    scene.scene.switchTo();
-    startAutorotate();
-    updateSceneName(scene);
-    updateSceneList(scene);
+function switchScene(scene) {
+  stopAutorotate();
+  scene.view.setParameters(scene.data.initialViewParameters);
+  scene.scene.switchTo();
+  startAutorotate();
+  updateSceneName(scene);
+  updateSceneList(scene);
+
+  var livingRoomPlanOverlay = document.querySelector('#living-room-plan-overlay');
+
+  if (livingRoomPlanOverlay) {
+    livingRoomPlanOverlay.style.display =
+      scene.data.id === '0--' ? 'block' : 'none';
   }
+}
 
   function updateSceneName(scene) {
     sceneNameElement.innerHTML = sanitize(scene.data.name);
