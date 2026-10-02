@@ -854,9 +854,22 @@ body.view-control-buttons .viewControlButton {
   display: none;
 }
 
+#living-room-plan-overlay {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 360px;
+  max-width: 28vw;
+  z-index: 1000;
+  pointer-events: none;
+  display: none;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
 #living-room-plan-overlay img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 20px;
+}
 }
