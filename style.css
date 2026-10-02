@@ -853,8 +853,10 @@ body.view-control-buttons .viewControlButton {
   pointer-events: none;
   display: none;
 }
-
-#living-room-plan-overlay {
+#living-room-plan-overlay,
+#bedroom-1-plan-overlay,
+#bedroom-2-plan-overlay,
+#bathroom-plan-overlay {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -867,9 +869,11 @@ body.view-control-buttons .viewControlButton {
   overflow: hidden;
 }
 
-#living-room-plan-overlay img {
+#living-room-plan-overlay img,
+#bedroom-1-plan-overlay img,
+#bedroom-2-plan-overlay img,
+#bathroom-plan-overlay img {
   display: block;
   width: 100%;
   height: auto;
-}
 }
